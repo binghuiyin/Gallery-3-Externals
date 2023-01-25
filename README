@@ -1,0 +1,21 @@
+install in modules directory
+
+usage:
+Latest Album:
+http://scottnath.com/gallery3/index.php/externals?block_id=latest_album
+
+Latest Photo:
+http://scottnath.com/gallery3/index.php/externals?block_id=latest_photo
+
+Random Album:
+http://scottnath.com/gallery3/index.php/externals?block_id=random_album
+
+Random Photo:
+http://scottnath.com/gallery3/index.php/externals?block_id=random_photo
+
+then, if you wanted to call this on an outside page you would do this:
+
+<?php
+$imglink = file_get_contents("http://scottnath.com/gallery3/index.php/randimg?block_id=latest_album", "r");
+echo "$imglink";
+?>
